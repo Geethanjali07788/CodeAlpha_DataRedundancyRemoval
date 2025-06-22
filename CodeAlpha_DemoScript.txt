@@ -1,0 +1,34 @@
+Code Alpha - Data Redundancy Removal System Demo
+
+1. Introduction
+"Hello, this is my submission for the Code Alpha Internship task titled 'Data Redundancy Removal System'. This project uses Flask for the backend API and MongoDB to store only unique and validated data entries."
+
+2. Start MongoDB
+Command: mongod
+
+3. Run the Flask App
+Command: python app.py
+- Shows app running at http://127.0.0.1:5000
+
+4. Submit Valid Data in Postman
+POST to http://127.0.0.1:5000/submit
+Body:
+{
+  "name": "Temperature Sensor",
+  "value": 23.5
+}
+- Output: "Data inserted successfully"
+
+5. Submit Duplicate Data
+Same POST request as above
+- Output: "Duplicate data found"
+
+6. Submit Invalid Data
+Body:
+{
+  "device": "Sensor X"
+}
+- Output: "Invalid data format"
+
+7. Conclusion
+"This concludes my demo. The complete source code is available on my GitHub under the repository: CodeAlpha_DataRedundancyRemoval. Thank you!"
